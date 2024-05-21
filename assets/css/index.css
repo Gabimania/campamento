@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: #FFC745;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.info {
+    color: #FFC745;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.container1 {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #007a78;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option-container {
+    display: none;
+}
+
+input[type="number"], 
+input[type="submit"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus, 
+input[type="submit"]:focus, 
+select:focus {
+    border-color: #007a78;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #FFC745;
+    border: none;
+    color: #007a78;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6b741;
+}
+
+label {
+    font-weight: bold;
+    color: #FFC745;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .container1 {
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        font-size: 0.9em;
+        margin: 2px 0;
+    }
+
+    input[type="number"], 
+    input[type="submit"], 
+    select {
+        font-size: 12px;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+}
